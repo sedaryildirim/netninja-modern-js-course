@@ -43,3 +43,58 @@ console.log(points);
 // Symbol - Used with Objects
 
 //  Continue from here > https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1239
+
+// strings
+console.log('hello, world');
+
+// stores mario@thenetniinja.co.uk inside the variable, email, console.log then prints email to the console
+let email = 'mario@thenetninja.co.uk';
+console.log(email);
+
+// string concatenation
+// adds 2 or more strings together which can also be placed into another variable
+
+let firstName = 'brandon';
+let lastName = 'ninja';
+
+console.log(firstName + lastName);
+
+let fullName = firstName + ' ' + lastName;
+
+console.log(fullName);
+
+// getting characters
+// below will console log the 1st letter starting from 0
+console.log(fullName[0]);
+// below will console log the 1st and 5th letters starting from 0
+console.log(fullName[0, 5]);
+
+// string length
+// returns the length of the fullName variable, spaces also count as a length
+console.log(fullName.length);
+
+// string methods - methods are associated with objects, while functions are not
+// Function — a set of instructions that perform a task.
+// Method — a set of instructions that are associated with an object.
+// below is a method to turn string into uppercase
+console.log(fullName.toUpperCase());
+// below is a method to turn string into lowercase
+console.log(fullName.toLowerCase());
+
+// () means that something is a method, eg .toLowerCase() is a method
+// below stores saved value to another variable that can be called again
+let result = fullName.toLocaleLowerCase();
+
+console.log(result);
+
+// creates new variable that searches the string of email variable and finds the position of a '@' string
+let index = email.indexOf('@');
+// logs it to console
+console.log(index);
+
+// common string methods
+// methods are just functions that belong to a specific object or object type
+
+
+// continue from here
+// https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1875
