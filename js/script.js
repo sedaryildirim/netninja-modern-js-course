@@ -48,8 +48,8 @@ console.log(points);
 console.log('hello, world');
 
 // stores mario@thenetniinja.co.uk inside the variable, email, console.log then prints email to the console
-let email = 'mario@thenetninja.co.uk';
-console.log(email);
+// let email = 'mario@thenetninja.co.uk';
+// console.log(email);
 
 // string concatenation
 // adds 2 or more strings together which can also be placed into another variable
@@ -77,24 +77,137 @@ console.log(fullName.length);
 // Function — a set of instructions that perform a task.
 // Method — a set of instructions that are associated with an object.
 // below is a method to turn string into uppercase
-console.log(fullName.toUpperCase());
+console.log(fullName.toUpperCase()); 
+// .toUpperCase is a method being called on a string
+
 // below is a method to turn string into lowercase
 console.log(fullName.toLowerCase());
+// .toLowerCase is a method being called on a string
 
 // () means that something is a method, eg .toLowerCase() is a method
 // below stores saved value to another variable that can be called again
-let result = fullName.toLocaleLowerCase();
+// let result = fullName.toLowerCase();
 
-console.log(result);
+// console.log(result);
 
 // creates new variable that searches the string of email variable and finds the position of a '@' string
-let index = email.indexOf('@');
+// let index = email.indexOf('@');
 // logs it to console
-console.log(index);
+// console.log(index);
+
+// continue from here
+// https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1875
 
 // common string methods
 // methods are just functions that belong to a specific object or object type
 
+let email = 'mario@thenetninja.co.uk';
 
-// continue from here
-// https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1875
+// .lastIndexOf is method called on email, which is an object, which is inside the variable email
+// it finds the last index of N, and returns it as a number data type
+
+// let result0 = email.lastIndexOf('n');
+// console.log(result0);
+
+// below slices the object from position 0 to position 5, which will show first 5 characters in the string
+
+// let result0 = email.slice(0,5);
+// console.log(result0);
+
+// substr gets 10 characters, starting from position 4, going to position 14
+// 0 1 2 3 >4< 5 6 7 8 9 10 11 12 13 >14< 15 16 17 18 19 20 21 22 23
+// let result0 = email.substr(4,10);
+// let result0 = email.substr(4,10);
+// console.log(email.length);
+// console.log(result0);
+
+// .replace replaces the first M with a W
+// let result0 = email.replace('m', 'w');
+
+// will only replace the first instance of
+// let result0 = email.replace('n', 'w');
+// console.log(result0);
+
+// Number Data Types
+
+ let radius = 10;
+ const pi = 3.14;
+ 
+//  console.log(radius, pi);
+
+// math operators >> +, -, *. /, ** to the power of, % get remainder of
+// console.log(10/2);
+
+// takes the variable radius, divides by 3 and gives us the remainder
+// let result = radius % 3;
+
+// works out the area of radius
+// let result = pi * radius **2;
+
+// order of operation
+// BIDMAS
+// BRACKETS > INDICES > DIVISION > MULTIPLICATION > ADDITION > SUBTRACTION
+
+// let result = 5 * (10-3)**2;
+// console.log(result);
+
+// let likes = 10;
+
+// likes = likes + 1;
+// has a shorthand to add +
+// likes++;
+
+// subtraction shorthand
+// likes--;
+
+// below adds 10
+// + takes the current value, and = adds on 10
+// likes +=10;
+
+// works with subtraction
+// likes -=5;
+
+// multiplication
+// likes *=02;
+
+// division
+// likes /=2;
+
+// console.log(likes);
+
+// NaN not a number
+
+// below will log nan, aka an error
+// console.log(5/'hello');
+
+// concatenate numbers
+
+// let result = 'the blog has ' + likes + ' likes'
+// console.log(result);
+
+// template strings
+const title = 'best reads of 2019';
+const author = 'mario';
+const likes = 30;
+
+// concatenation way
+// result = 'the blog called ' + title + ' by ' + ' author' + ' has ' + likes + ' likes';
+// console.log(result);
+
+// https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=3001
+// watch above
+// template string way
+let result = `the blog called ${title} by ${author} has ${likes} likes`;
+console.log(result);
+
+// creating html templates
+let html = `
+<h2>${title}</h2>
+<p>by ${author}</p>
+<span> this blog has ${likes} </span>
+`
+
+console.log(html);
+
+// continue from heree
+// https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=3161
