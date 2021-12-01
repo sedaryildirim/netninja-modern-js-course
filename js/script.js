@@ -256,16 +256,102 @@
 // null and undefined
 // null is intentional lack of value
 
-let age = null;
-console.log(age, age + 3,`the age is ${age}`);
+// let age = null;
+// console.log(age, age + 3,`the age is ${age}`);
 
 // lesson 15
 // https://github.com/iamshaunjp/modern-javascript/blob/lesson-15/chapter_2/sandbox.js
 // booleans
 // https://youtu.be/FhguwBJeqWs?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=3916
 
+// console.log(true, false, "true", "false");
+
 // booleans and comparisons
+// let email = 'luigi@theenetninja.co.uk';
+// let names = ['name one', 'name two', 'name three'];
+// let result = email.includes('@');
+
+// console.log(result);
+
+// let result = email.includes('!');
+// let result = names.includes('name one');
+
+// console.log(result)
 
 // methods can return booleans
 
 // comparison operators
+// let age = 25;
+
+// console.log(age == 25);
+// console.log(age == 30);
+// below is age NOT equal to 30 so becomes true
+// console.log(age != 30);
+
+// console.log(age > 20);
+// console.log(age < 20);
+// less than  or equal to
+// console.log(age <= 25);
+// console.log(age >= 25);
+
+// let name = 'shaun';
+
+// console.log(name == 'shaun');
+// console.log(name == 'shaun');
+
+// shaun is greater than crystal because of alphabetical order
+// console.log(name > 'crystal');
+// lower case letters are greater than uppercase letters
+// console.log(name > 'Shaun');
+// lower case shaun is greater than upper case crystal
+// console.log(name > 'Crystal');
+
+// loose comparison types
+let age = 25;
+
+// different types can be equal with loose comparison types as JS does type conversion in the background
+// console.log(age == 25);
+// console.log(age == '25');
+
+// console.log(age != 25);
+// console.log(age != '25');
+
+// strict comparison types
+// is age the same type an value of number 25
+console.log(age === 25);
+//true
+console.log(age === '25');
+// false
+
+// is age not equal to 25, false as it  is age = 25
+console.log(age !== 25);
+
+// is  age not equal to string 25 = true
+console.log(age !== '25');
+
+// type conversion
+
+let score = '100';
+
+// turns score string variable into a number data type from a string data type
+score = Number(score)
+console.log(score + 1);
+
+// string(variable) works in opposite
+score = String(score);
+console.log(score + 1);
+
+// shows data type of variable
+console.log(typeof score);
+
+
+// NaN, hello is NaN so cant switch data types
+let greeting = 'hello';
+result = Number(greeting);
+console.log(result);
+
+result = String(50);
+console.log(result);
+
+// continue from here
+// https://www.youtube.com/watch?v=JloLGV9DmtQ&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&index=4
