@@ -132,7 +132,7 @@
 
 //  let radius = 10;
 //  const pi = 3.14;
- 
+
 //  console.log(radius, pi);
 
 // math operators >> +, -, *. /, ** to the power of, % get remainder of
@@ -307,7 +307,7 @@
 // console.log(name > 'Crystal');
 
 // loose comparison types
-let age = 25;
+// let age = 25;
 
 // different types can be equal with loose comparison types as JS does type conversion in the background
 // console.log(age == 25);
@@ -318,40 +318,160 @@ let age = 25;
 
 // strict comparison types
 // is age the same type an value of number 25
-console.log(age === 25);
-//true
-console.log(age === '25');
+// console.log(age === 25);
+// true
+// console.log(age === '25');
 // false
 
 // is age not equal to 25, false as it  is age = 25
-console.log(age !== 25);
+// console.log(age !== 25);
 
 // is  age not equal to string 25 = true
-console.log(age !== '25');
+// console.log(age !== '25');
 
 // type conversion
 
-let score = '100';
+// let score = '100';
 
 // turns score string variable into a number data type from a string data type
-score = Number(score)
-console.log(score + 1);
+// score = Number(score)
+// console.log(score + 1);
 
 // string(variable) works in opposite
-score = String(score);
-console.log(score + 1);
+// score = String(score);
+// console.log(score + 1);
 
 // shows data type of variable
-console.log(typeof score);
+// console.log(typeof score);
 
 
 // NaN, hello is NaN so cant switch data types
-let greeting = 'hello';
-result = Number(greeting);
-console.log(result);
+// let greeting = 'hello';
+// result = Number(greeting);
+// console.log(result);
 
-result = String(50);
-console.log(result);
+// result = String(50);
+// console.log(result);
 
 // continue from here
 // https://www.youtube.com/watch?v=JloLGV9DmtQ&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&index=4
+
+// control flows
+// for loop
+
+// for(let i = 0; i < 5; i++){
+//     console.log('in loop', i);
+// }
+
+// console.log('loop finished');
+
+// const names = ['shaun', 'mario', 'luigi'];
+
+// for(let i = 0; i < names.length; i++){
+//     console.log(i)
+// }
+
+// for(let i = 0; i < names.length; i++){
+//     console.log(names[i])
+// }
+
+// for(let i = 0; i < names.length; i++){
+//     let html = `<div> ${names[i]} </div>`
+//     console.log(html);
+// }
+
+//control flows
+// while loop
+// const names = ['shaun', 'mario', 'luigi'];
+// let i = 0;
+
+// while (i < names.length) {
+//     console.log(names[i]);
+//     i++;
+// }
+
+// do while loops
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1051
+// let i = 3;
+
+// do {
+//     console.log('val of i is ', i);
+//     i++;
+// } while (i<5);
+
+// if statements
+// conditional statements
+// code block only executes if true once
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1121
+// const age = 25;
+
+// if(age > 20) {
+//     console.log('you are over 20');
+// }
+
+// const ninjas = ['sid', 'ryu', 'chun-li', 'whoops'];
+
+// if(ninjas.length >3) {
+//     console.log("that's a lot of ninjas");
+// }
+
+// else statements 
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1388
+// const password = 'passd11';
+
+// if(password.length >= 8) {
+//     console.log("that's a long password");
+// } else {
+//     console.log("that's not long enough");
+// }
+
+// different multiple conditions - chaining else ifs
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1542
+// const password = 'pas12312312sd11';
+
+// if(password.length >=12){
+//     console.log("that's a very very very strong password")
+// } else if (password.length >= 8) {
+//     console.log("that's a long password");
+// } else {
+//     console.log("that's not long enough");
+// }
+
+// logical operators OR || and AND &&
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1654
+
+// const password = 'p@1234';
+
+// checks for length for greater than 12 AND has @ symbol, other wise runs to next else if
+// if(password.length >=12 && password.includes('@')){
+    // console.log("that's a very very very strong password")
+    // checks for length greater 8 OR includes @ symbol and runs like 450
+// } else if (password.length >= 8 || password.includes('@') && password.length >5) {
+//     console.log("that's a strong password");
+// } else {
+//     console.log("that's not strong enough");
+// }
+
+// logical NOT (!)
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1925
+
+let user = false;
+// switches false to true
+if (!user)  {
+    console.log('you have to be logged in');
+}
+
+console.log(true);
+console.log(false);
+console.log(!true);
+console.log(!false);
+
+
+// break and continue
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2126
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+for(let i = 0; i < scores.length;  i++) {
+    console.log('your score is', scores[i]);
+}
