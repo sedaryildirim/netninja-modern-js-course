@@ -444,8 +444,8 @@
 
 // checks for length for greater than 12 AND has @ symbol, other wise runs to next else if
 // if(password.length >=12 && password.includes('@')){
-    // console.log("that's a very very very strong password")
-    // checks for length greater 8 OR includes @ symbol and runs like 450
+// console.log("that's a very very very strong password")
+// checks for length greater 8 OR includes @ symbol and runs like 450
 // } else if (password.length >= 8 || password.includes('@') && password.length >5) {
 //     console.log("that's a strong password");
 // } else {
@@ -473,5 +473,49 @@ console.log(!false);
 const scores = [50, 25, 0, 30, 100, 20, 10];
 
 for(let i = 0; i < scores.length;  i++) {
+    
+    if(scores[i] === 0){
+        continue;
+    }
+    
     console.log('your score is', scores[i]);
+    
+    if(scores[i] === 100) {
+        console.log('congrats, top score');
+        break;
+    }
 }
+
+// break breaks the loop when score === 100
+// continue continues the loop without progressing to the following loop
+
+// switch statements
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2352
+
+const grade = 'd';
+
+switch(grade){
+    case 'a':
+    console.log('you got an a!');
+    break;
+    case 'b':
+    console.log('you got an b!');
+    break;
+    case 'c':
+    console.log('you got an c!');
+    break;
+    case 'd':
+    console.log('you got an d!');
+    break;
+    case 'e':
+    console.log('you got an e!');
+    break;
+    case 'f':
+    console.log('you got an f!');
+    break;
+    default:
+    console.log('not a valid grade');
+}
+
+
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2599
