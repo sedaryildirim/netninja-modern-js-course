@@ -473,13 +473,13 @@
 // const scores = [50, 25, 0, 30, 100, 20, 10];
 
 // for(let i = 0; i < scores.length;  i++) {
-    
+
 //     if(scores[i] === 0){
 //         continue;
 //     }
-    
+
 //     console.log('your score is', scores[i]);
-    
+
 //     if(scores[i] === 100) {
 //         console.log('congrats, top score');
 //         break;
@@ -528,9 +528,9 @@
 // let age = 30;/
 
 // if (true) {
-    // let age = 40; //  is a local variable, can only be accessed inside the current code block / local scope
-    // let name = 'sid';
-    // console.log('inside first code block', age, name);
+// let age = 40; //  is a local variable, can only be accessed inside the current code block / local scope
+// let name = 'sid';
+// console.log('inside first code block', age, name);
 // }
 
 // console.log('inside first code block', age, name);
@@ -625,18 +625,18 @@
 //  let resultTwo = name.toUpperCase();
 //  console.log(resultTwo);
 
- // call back functions
- // https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1845
+// call back functions
+// https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1845
 
 // const myFunc = (callBackFunc) => {
-    // do something
-    // let value = 50;
-    // callBackFunc(value);
+// do something
+// let value = 50;
+// callBackFunc(value);
 // };
 
 // myFunc(value  => {
-    // do something
-    // console.log(value);
+// do something
+// console.log(value);
 // });
 
 // let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
@@ -653,21 +653,134 @@
 
 // Reference to UI
 
-const ul = document.querySelector('.people');
+// const ul = document.querySelector('.people');
 
-const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-let html = '';
+// let html = '';
 
-people.forEach(person => {
-    // create html template
-    html += `<li style"color: purple"> ${person}</li>`;
-});
+// people.forEach(person => {
+// create html template
+//     html += `<li style"color: purple"> ${person}</li>`;
+// });
 
-console.log(html);
-ul.innerHTML = html;
+// console.log(html);
+// ul.innerHTML = html;
 
 
 // chapter 5
 // https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=8
 // objects
+
+// object literals
+// objects start with {}
+
+// let user = {
+//     name: 'Crystal',
+//     age: '30',
+//     email: 'crystal@netninja.co.uk',
+//     location: 'berlin',
+//     blogs: ['why mac and cheese rules', '1000 things to make with marmite']
+// };
+
+// console.log(user);
+// console.log(user.name); // calls name from var user
+
+// updating properties properties
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=462
+
+// user.age = 35;
+// console.log(user.age);
+
+// both work
+
+// console.log(user['name']);
+// user['name'] = 'chun-li';
+// console.log(user['name']);
+
+// shows user is a object type
+// console.log(typeof user); 
+
+// adding methods to objects
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=566
+// function inside a object
+// let user = {
+//     name: 'Crystal',
+//     age: '30',
+//     email: 'crystal@netninja.co.uk',
+//     location: 'berlin',
+//     blogs: ['why mac and cheese rules', '1000 things to make with marmite'],
+//     login: function(){
+//         console.log('user has logged in');
+//     },
+//     logout: function(){
+//         console.log('the user has logged out');
+//     },
+//     logBlogs: function(){
+
+//     }
+// };
+
+// user.login();
+// user.logout();
+
+// const name = 'mario';
+
+// this keyword
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=745
+
+// let user = {
+//     name: 'Crystal',
+//     age: '30',
+//     email: 'crystal@netninja.co.uk',
+//     location: 'berlin',
+//     blogs: ['why mac and cheese rules', '1000 things to make with marmite'],
+//     login() {
+//         console.log('user has logged in');
+//     },
+//     logout()  {
+//         console.log('the user has logged out');
+//     },
+//     logBlogs() {
+//         // this refers to THIS object
+//         console.log('this user has written the following blogs: ');
+//         this.blogs.forEach(blog =>{
+//             console.log(blog);
+//         })
+//     }
+// };
+
+// user.logBlogs();
+
+// math object
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1356
+
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+
+const area = 7.7;
+
+// rounds number to nearest integer, up or down
+console.log(Math.round(area));
+// floors the number to lowest full integer
+console.log(Math.floor(area));
+// ceiling of nearest full number, opposite of floor
+console.log(Math.ceil(area));
+// takes away the decimal point integer 
+console.log(Math.trunc(area));
+
+// random numbers
+
+// random number between 0 and 1
+const random = Math.random();
+console.log(random);
+
+// rounds number to either 0 or 1, then times by 100 to give number between 0-100
+console.log(Math.round(random * 100));
+
+// primitive and reference types
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1700
+
+// JS & The Dom
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2
