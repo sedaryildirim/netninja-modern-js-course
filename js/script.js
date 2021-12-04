@@ -755,32 +755,84 @@
 // math object
 // https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1356
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-const area = 7.7;
+// const area = 7.7;
 
 // rounds number to nearest integer, up or down
-console.log(Math.round(area));
+// console.log(Math.round(area));
 // floors the number to lowest full integer
-console.log(Math.floor(area));
+// console.log(Math.floor(area));
 // ceiling of nearest full number, opposite of floor
-console.log(Math.ceil(area));
+// console.log(Math.ceil(area));
 // takes away the decimal point integer 
-console.log(Math.trunc(area));
+// console.log(Math.trunc(area));
 
 // random numbers
 
 // random number between 0 and 1
-const random = Math.random();
-console.log(random);
+// const random = Math.random();
+// console.log(random);
 
 // rounds number to either 0 or 1, then times by 100 to give number between 0-100
-console.log(Math.round(random * 100));
+// console.log(Math.round(random * 100));
 
 // primitive and reference types
 // https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1700
 
 // JS & The Dom
 // https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2
+// Document Object Model
+
+// const paragraph = document.querySelector('p');
+// const error = document.querySelector('.error');
+// const paragraph = document.querySelectorAll('p');
+// const error = document.getElementsByClassName('error');
+// const error = document.getElementById('error');
+// const error = document.getElementsByTagName('p');
+
+// console.log(paragraph);
+// console.log(error);
+
+// get items by selectors
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1287
+
+// const para = document.querySelector('p');
+// console.log(para.innerText);
+
+// para.innerText = 'ninjas are awesome';
+// console.log(para.innerText);
+
+// para.innerText += ' ninjas are awesome';
+// console.log(para.innerText);
+
+// const paras = document.querySelectorAll('p');
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// })
+
+// change attributes
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1853
+
+// const link = document.querySelector('a');
+
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.com');
+// link.innerText = 'the net ninja';
+
+// setting attributes
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2110
+
+// style attributes
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2194
+
+// add and remove classes
+// https://youtu.be/wKBu_dEaF9E?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2550
+
+// const content = document.querySelectorAll('p');
+
+// content.classList.add('error');
+// content.classList.remove('error');
