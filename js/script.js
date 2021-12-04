@@ -455,36 +455,36 @@
 // logical NOT (!)
 // https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1925
 
-let user = false;
+// let user = false;
 // switches false to true
-if (!user)  {
-    console.log('you have to be logged in');
-}
+// if (!user)  {
+//     console.log('you have to be logged in');
+// }
 
-console.log(true);
-console.log(false);
-console.log(!true);
-console.log(!false);
+// console.log(true);
+// console.log(false);
+// console.log(!true);
+// console.log(!false);
 
 
 // break and continue
 // https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2126
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
-for(let i = 0; i < scores.length;  i++) {
+// for(let i = 0; i < scores.length;  i++) {
     
-    if(scores[i] === 0){
-        continue;
-    }
+//     if(scores[i] === 0){
+//         continue;
+//     }
     
-    console.log('your score is', scores[i]);
+//     console.log('your score is', scores[i]);
     
-    if(scores[i] === 100) {
-        console.log('congrats, top score');
-        break;
-    }
-}
+//     if(scores[i] === 100) {
+//         console.log('congrats, top score');
+//         break;
+//     }
+// }
 
 // break breaks the loop when score === 100
 // continue continues the loop without progressing to the following loop
@@ -492,30 +492,182 @@ for(let i = 0; i < scores.length;  i++) {
 // switch statements
 // https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2352
 
-const grade = 'd';
+// const grade = 'd';
 
-switch(grade){
-    case 'a':
-    console.log('you got an a!');
-    break;
-    case 'b':
-    console.log('you got an b!');
-    break;
-    case 'c':
-    console.log('you got an c!');
-    break;
-    case 'd':
-    console.log('you got an d!');
-    break;
-    case 'e':
-    console.log('you got an e!');
-    break;
-    case 'f':
-    console.log('you got an f!');
-    break;
-    default:
-    console.log('not a valid grade');
-}
-
+// switch(grade){
+//     case 'a':
+//     console.log('you got an a!');
+//     break;
+//     case 'b':
+//     console.log('you got an b!');
+//     break;
+//     case 'c':
+//     console.log('you got an c!');
+//     break;
+//     case 'd':
+//     console.log('you got an d!');
+//     break;
+//     case 'e':
+//     console.log('you got an e!');
+//     break;
+//     case 'f':
+//     console.log('you got an f!');
+//     break;
+//     default:
+//     console.log('not a valid grade');
+// }
 
 // https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2599
+
+// Switch statements use strict equality
+
+// Variables & Block scope
+// https://youtu.be/JloLGV9DmtQ?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=2685
+
+// this is a global scope variable, can be accessed any where
+// let age = 30;/
+
+// if (true) {
+    // let age = 40; //  is a local variable, can only be accessed inside the current code block / local scope
+    // let name = 'sid';
+    // console.log('inside first code block', age, name);
+// }
+
+// console.log('inside first code block', age, name);
+
+// also true for nested code blocks within other code blocks
+
+// Chapter 4
+// Functions and Methods
+// https://www.youtube.com/watch?v=xUI5Tsl2JpY&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&index=4
+// functions allow us to define a block of code and allow us to call it whenever we want
+
+// function declaration
+
+// function greet(){
+//     console.log('hello');
+// }
+
+// function expression
+// const variable expressed as a function
+// const speak = function(){
+//     console.log('good day');
+// };
+
+// greet();
+// speak();
+
+// arguments and parameters
+// https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=544
+
+// const speak = function(name = 'luigi', time = 'night'){
+//     console.log(`good ${time} ${name}`);
+// };
+
+// speak();
+// speak('sid', 'morning');
+
+// return functions 
+// https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=832
+
+// const calcArea = function(radius){
+//     return 3.14* radius ** 2;
+// };
+
+// const area = calcArea(5);
+// console.log(area);
+
+// arrow functions 
+// https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1102
+
+
+// no brackets if 1 parameter, need brackets if no parameter or more than 1 parameter
+// const calcArea = radius => 3.14 * radius **2;;
+
+// const area = calcArea(5);
+// console.log(area);
+
+// const greet = () => 'hello, world';
+// const result = greet();
+// console.log(result);
+
+// const bill = function(products, tax){
+//     let total = 0;
+//     for(let i = 0; i < products.length; i++){
+//         total += products[i] + products[i] *tax;
+//     }
+//     return total
+// }
+
+// const bill = (products, tax) => {
+//     let total = 0;
+//     for(let i = 0; i < products.length; i++){
+//         total += products[i] + products[i] *tax;
+//     }
+//     return total
+// };
+
+// console.log(bill([10, 15, 30], 0.2));
+
+// methods and functions
+
+// const name = 'sid';
+
+// functions
+
+// const greet = () => 'hello';
+
+// let resultOne = greet();
+
+// console.log(resultOne);
+
+// methods
+//  let resultTwo = name.toUpperCase();
+//  console.log(resultTwo);
+
+ // call back functions
+ // https://youtu.be/xUI5Tsl2JpY?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=1845
+
+// const myFunc = (callBackFunc) => {
+    // do something
+    // let value = 50;
+    // callBackFunc(value);
+// };
+
+// myFunc(value  => {
+    // do something
+    // console.log(value);
+// });
+
+// let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+// const logPerson = (person, index) => {
+// console.log(`${index} - hello ${person}`);
+// };
+
+// people.forEach(logPerson);
+
+// people.forEach((person, index) => {
+//     console.log(index, person);
+// });
+
+// Reference to UI
+
+const ul = document.querySelector('.people');
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = '';
+
+people.forEach(person => {
+    // create html template
+    html += `<li style"color: purple"> ${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
+
+
+// chapter 5
+// https://youtu.be/X0ipw1k7ygU?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&t=8
+// objects
